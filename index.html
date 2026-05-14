@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batalha de Rpg</title>
-    <link rel="styleheet" href="style.css">
+<meta charset="UTF-8">
+<title>Hero Battle</title>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<h1>CRIE O SEU HEROÍ</h1>
+<div class="arena">
+<h1>☠️COLISEU DOS HEROÍS☠️</h1>
 
-<label for="Heroís">ESCOLHA UM HEROÍ:</label>
-<select name="classes" id="classes">
-  <option value="guerreiro">Guerreiro</option>
-  <option value="mago">Mago</option>
-  <option value="arqueiro">Arqueiro</option>
+<div class="controles">
+<label>📜ESCOLHA SUA CLASSE📜:</label>
+<select id="classe">
+<option value="Guerreiro">Guerreiro</option>
+<option value="Mago">Mago</option>
+<option value="Arqueiro">Arqueiro</option>
 </select>
 
-<br>_______________________________________</br>
+<label>⚔️ESCOLHA SUA ARMA⚔️:</label>
+<input type="text" id="arma" placeholder="Ex: Espada, Cajado, Arco...">
 
-<label for="Armas"><h2>ESCOLHA UMA ARMA</H2></label>
-<input type="text" name="armas" id="armas">
+<button onclick="lutar()">INICIAR COMBATE!</button>
+</div>
+
+<div id="log">Aguardando desafiante...</div>
+</div>
+
+<script src="./rpg.js"></script>
+
 </body>
 </html>
